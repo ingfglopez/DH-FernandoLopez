@@ -1,21 +1,39 @@
 const express = require("express");
 const path = require("node:path");
-const searchRouter = require("./routers/search.js");
+
+
+const productosRouter=require('./routers/producto.js');
+const loginRouter=require('./routers/login.js');
+const carritoRouter=require('./routers/carrito.js');
 const app = express();
 const PORT = process.env.PORT ?? 3001;
 app.use(express.static(path.resolve(__dirname, "public")));
+app.set("view engine","ejs");
 app.listen(PORT, err => {
   console.log(err ? err : `server up at http://localhost:${PORT}`);
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "views/home.html"));
+  res.render("index");
 });
-app.use("/search", searchRouter);
-app.get("/about", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "views/about.html"));
+
+app.use("/productos", productosRouter);
+app.use("/login", loginRouter);
+app.use("/carrito", carritoRouter);
+app.get("/register", (req, res) => {
+  res.render("register");
 });
+app.get("/contacto", (req, res) => {
+  res.render("contacto");
+});
+app.get("/nosotros", (req, res) => {
+  res.render("nosotros");
+});
+
+
+
 //catch all route
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "views/404.html"));
+
+  res.render("404");
 });

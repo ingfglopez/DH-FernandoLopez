@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="shortcut icon" href="/img/logoChico.png" type="png">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    <%- include('./partials/header') %>
+    <%- include('./partials/nav') %>
+    <section>
+        <div class="carrito">
+            <h1>Carrito de Compras</h1>
+            <div class="productos">
+              <div class="producto">
+                <img src="/img/monitor24.webp" alt="Producto 1">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $56.000</p>
+                <button class="eliminar">Eliminar</button>
+              </div>
+              <div class="producto">
+                <img src="/img/monitor24.webp" alt="Producto 1">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $56.000</p>
+                <button class="eliminar">Eliminar</button>
+              </div>
+              <div class="producto">
+                <img src="/img/monitor24.webp" alt="Producto 1">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $56.000</p>
+                <button class="eliminar">Eliminar</button>
+              </div>
+              <div class="producto">
+                <img src="/img/monitor24.webp" alt="Producto 1">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $56.000</p>
+                <button class="eliminar">Eliminar</button>
+              </div>
+              <!-- Añade más productos con la misma estructura -->
+            </div>
+            <div class="total">
+              <p>Total:</p>
+              <p class="monto">$267.435,60</p>
+            </div>
+          </div>
+
+    </section>
+
+
+    <%- include('./partials/foother') %>
+
+
+</body>
+</html>

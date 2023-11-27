@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="/img/logoChico.png" type="png">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    <%- include('./partials/nav') %>
+    <main>
+
+
+
+        <section>
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="/img/monitor24.webp" alt="Entrada de blog">
+                </div>
+            <div class="derecha">
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Monitor 24 Pulgadas</h4>
+                    </a>
+                    <p>Actualizacion: <span>20/10/2020</span> Stock: <span>25 Unidades</span> </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga non inventore excepturi quisquam,
+                        quis totam omnis pariatur iste soluta facilis aliquam voluptas mollitia! Quos tempore id nemo
+                        vero sequi maiores.</p>
+
+                    <div class="precio">
+                        <h1>$78.000,00.-</h1>
+
+                    </div>
+                    <div class="agregar">
+                        <span>Cantidad:</span>
+                        <input type="number" name="cantidad" min="1" value="1" class="canti">
+                        <input type="submit" name="comprar" value="Agregar">
+                    </div>
+                </div>
+            </div>    
+            </article>
+            <article>
+                <div class="entrada-blog">
+                    <div class="imagenSmall">
+                        <img src="/img/monitor24.webp" class="imagenSM" alt="TV">
+                        <img src="/img/monitor24.webp" alt="TV" class="imagenSM" >
+                        <img src="/img/monitor24.webp" alt="TV" class="imagenSM">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+    <%- include('./partials/foother') %>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="shortcut icon" href="/img/logoChico.png" type="png">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap"
+        rel="stylesheet">
+    
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <%- include('./partials/nav') %>
+    
+    <main class="contenedor"> 
+        <h1>Conoce sobre Nosotros</h1>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/logo.png" alt="imagen sobre nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <blockquote>25 Años de Experiencia</blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vel quae minus eaque minima porro deleniti, facilis ea quis nostrum neque perspiciatis optio incidunt assumenda doloribus voluptas impedit temporibus autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eaque distinctio, pariatur qui quaerat nobis vero quia, maxime mollitia dicta rem aliquid voluptatibus impedit et voluptate optio ea itaque odio?</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor seccion">
+            <h2 class="fw-300 centrar-texto">Mas sobre nosotros</h2>
+            
+                <div class="iconos-nosotros">
+                
+                    <div class="icono">
+                    <img src="img/icono1.svg" alt="Icono seguridad" >
+                    <h3>Seguidad</h3> 
+                    <p>Quasi quibusdam, quos deserunt, recusandae iusto dolorem voluptatibus quaerat veritatis consectetur culpa sit dignissimos maiores iure id, magnam non voluptatum molestiae doloremque. </p>
+                    </div>
+                    
+                    <div class="icono">
+                    <img src="img/icono2.svg" alt="Icono mejor precio">
+                    <h3>El mejor precio</h3>
+                    <p>Quasi quibusdam, quos deserunt, recusandae iusto dolorem voluptatibus quaerat veritatis consectetur culpa sit dignissimos maiores iure id, magnam non voluptatum molestiae doloremque. </p>
+                    </div>
+                    
+                    <div class="icono">
+                    <img src="img/icono3.svg" alt="Icono a tiempo">
+                    <h3>Tiempo</h3>
+                    <p>Quasi quibusdam, quos deserunt, recusandae iusto dolorem voluptatibus quaerat veritatis consectetur culpa sit dignissimos maiores iure id, magnam non voluptatum molestiae doloremque. </p>
+                    </div>
+                </div>
+        </section>
+    
+        <%- include('./partials/foother') %>
+</body>
+</html>
